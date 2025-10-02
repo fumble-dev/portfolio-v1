@@ -14,7 +14,7 @@ const ovo = Ovo({
 export const metadata = {
   title: "Udanth Reddy",
   description:
-    "Full-stack developer skilled in building secure, scalable web applications. Experienced in React, Node.js, and databases with a strong focus on efficiency and user-friendly design.",
+    "",
 };
 
 export default function RootLayout({ children }) {

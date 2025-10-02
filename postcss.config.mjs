@@ -1,5 +1,6 @@
 
 const config = {
+  darkMode:'selector',
   plugins: ["@tailwindcss/postcss"],
   theme: {
     extend: {

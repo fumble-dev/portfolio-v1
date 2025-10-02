@@ -12,7 +12,7 @@ const Work = () => {
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 my-10 gap-5'>
                 {
                     workData.map((work, index) => (
-                        <div key={index} style={{ backgroundImage: `url(${work.bgImage})` }} className='aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative group cursor-pointer'>
+                        <a href={work.link} target='_blank' key={index} style={{ backgroundImage: `url(${work.bgImage})` }} className='aspect-square  bg-contain bg-no-repeat bg-center  rounded-lg relative group cursor-pointer'>
                             <div className='bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 items-center justify-between duration-500 group-hover:bottom-7'>
                                 <div className=''>
                                     <h2 className='font-semibold'>{work.title}</h2>
@@ -22,12 +22,12 @@ const Work = () => {
                                     <Image src={assets.send_icon} alt='' className='w-5' />
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     ))
                 }
             </div>
 
-                <a href="" className='w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px]  border-gray-700 rounded-full px-10 mx-auto my-20 hover:bg-gray-100 transition-all duration-500 py-3'>
+                <a href="https://github.com/fumble-dev" target='_blank' className='w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px]  border-gray-700 rounded-full px-10 mx-auto my-20 hover:bg-gray-100 transition-all duration-500 py-3'>
                     Show More <Image src={assets.right_arrow_bold} alt='' className='w-4 ' />
                 </a>
 
